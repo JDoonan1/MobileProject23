@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot ="end"></ion-back-button>
+    <ion-title class="ion-text-center ion-padding" size="large">Gig Venues</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <div>
+        <h3>Welcome to Live gigs in your location.</h3>
+        <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </ion-toolbar>
+  </ion-header>
+  <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ireland-Galway_17th-jan-og.jpg">
+
+  <ion-button color = "success" (click)="getGPS()">Press me to find your GPS</ion-button>
+  <h6>{{lat}}, {{long}}</h6>
+
+  <div>
+    <h6>Click below to see live venues in Galway.</h6>
+    <ion-button color = "success" (click)="openBrowser()">Open in Browser</ion-button>
+  </div>
+</ion-content>

@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'gig-venues',
+    loadChildren: () => import('./gig-venues/gig-venues.module').then( m => m.GigVenuesPageModule)
+  },
+  {
+    path: 'galway-weather',
+    loadChildren: () => import('./galway-weather/galway-weather.module').then( m => m.GalwayWeatherPageModule)
+  },
+  {
+    path: 'irish-movies',
+    loadChildren: () => import('./irish-movies/irish-movies.module').then( m => m.IrishMoviesPageModule)
+  },
+  {
+    path: 'galway-food',
+    loadChildren: () => import('./galway-food/galway-food.module').then( m => m.GalwayFoodPageModule)
+  },
 ];
 
 @NgModule({
@@ -19,4 +35,5 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot ="end"></ion-back-button>
+    <ion-title class="ion-text-center ion-padding" size="medium">Restaurant type</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ireland-Galway_17th-jan-og.jpg">
+
+<ion-list>
+<ion-radio-group [(ngModel)]="myStatus">
+<ion-item>
+<ion-label>Italian</ion-label>
+<ion-radio value="Itaian"></ion-radio>
+</ion-item>
+<ion-item>
+<ion-label>Sea Food</ion-label>
+<ion-radio value="Sea Food"></ion-radio>
+</ion-item>
+<ion-item>
+<ion-label>Spanish</ion-label>
+<ion-radio value="Spanish" ></ion-radio>
+</ion-item>
+<ion-item>
+<ion-label>Asian</ion-label>
+<ion-radio value="Asian" ></ion-radio>
+</ion-item>
+</ion-radio-group>
+</ion-list>
+<ion-button color = "success" (click)="onSave()">Save</ion-button>
+
+
+<div>
+  <h4>Click below to see restaurants in Galway.</h4>
+  <ion-button color = "success" (click)="openBrowser()">Open in Browser</ion-button>
+  </div>
+</ion-content>

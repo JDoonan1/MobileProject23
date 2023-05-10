@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button defaultHref="./home" (click)="goBack()" routerDirection="back" slot ="end"></ion-back-button>
+    <ion-title class="ion-text-center ion-padding" size="medium">Galway Weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>Forcast in Galway</h1>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+     <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ireland-Galway_17th-jan-og.jpg">
+     </ion-toolbar>
+ </ion-header> 
+
+  <h6>Conditions in Galway</h6>
+  <h6>Temperature: {{temperature}} degrees</h6>
+  <h6>Air Pressure: {{pressure}} Pascals</h6>
+  <h6>Air Humidity: {{humidity}} %</h6>
+  <h6>Sea Level Height: {{seaLevel}} meters</h6>
+</ion-content>
